@@ -1,0 +1,64 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <!--  The page should be encoded using the UTF-8 character set.  -->
+        <meta charset="utf-8"/>
+        <!--  A page title defined in the head element.  -->
+        <title> Login page.</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!--  
+            Header element that is containing the following 
+                o Headline element of biggest size with the page name or a logo image.
+                o Navigation element containing following
+                    ▪ Unordered list element with at least 3 list items.
+                        • One hyperlink element per list item.
+                o Hyperlink element to a page with a back to index page.        
+        -->
+        <header><h1>Login page.</h1>
+        <nav>   
+            <ul>    
+                <li><a href="index.html">Index</a></li> 
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="index.html">Back to index</a>
+        </header>        
+    </head>
+    <body>
+        <!--  
+            A container element for the main content of the page that is containing the following
+                o Headline element with text Login.
+                o Form element.
+                    ▪ Element appropriate for typing in the username.
+                    ▪ Element appropriate for typing in the password.
+                    ▪ Element appropriate for resetting the form.
+                    ▪ Element appropriate for signing in with the form data.        
+        -->
+        <div>
+            <h2>Login page.</h2>
+            <form method="post" action="LoginPage.html">
+                <p>
+
+                    <input type="text" name="username" placeholder="Username" required/>
+                </p>    
+                <p>
+                    <input type="password" name="password" placeholder="Password" required/>
+                </p>  
+                <p>
+                    <input type="reset" name="reset" value="Reset" />    <input type="submit" value="Sign in"/>
+                </p>
+  
+            </form>
+        </div>
+       <!-- 
+            A footer element that is containing the following
+                o Span element with html code for a copyright glyph and your name.
+        -->
+
+        <footer>
+            <p>Copyright &#169 <span> BlockOut.nu  </span> 2021</p>        
+        </footer>
+    </body>
+</html>
